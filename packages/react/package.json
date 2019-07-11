@@ -1,6 +1,6 @@
 {
   "name": "@daneroo/ottawajs-lerna-react",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A react component which depends on @daneroo/ottawajs-lerna-math",
   "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
   "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
@@ -90,7 +90,7 @@
     }
   },
   "dependencies": {
-    "@daneroo/ottawajs-lerna-math": "^1.1.4"
+    "@daneroo/ottawajs-lerna-math": "^1.1.5"
   },
   "gitHead": "b56b366f59f1db440a780c0a1d407b142d76965b"
 }
