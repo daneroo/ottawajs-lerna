@@ -12,5 +12,5 @@ function add (a, b) {
 function sum (...numbers) {
   return numbers.reduce((previous, current) => {
     return previous + current
-  },0)
+  }, 0)
 }

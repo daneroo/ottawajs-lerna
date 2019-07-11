@@ -3,10 +3,12 @@
 
 import s00 from './slides/00-intro.mdx'
 import s10 from './slides/10-getting-started.mdx'
+import s20 from './slides/20-workflow.mdx'
 
 export default [
   ...s00,
-  ...s10
+  ...s10,
+  ...s20
 ]
 export { default as theme } from 'theme.js'
 
