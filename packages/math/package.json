@@ -5,6 +5,9 @@
   "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
   "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "lib/math.js",
   "directories": {
     "lib": "lib",
@@ -35,5 +38,5 @@
       "jest": true
     }
   },
-  "gitHead": "e68fa63274ba9dc45862911cfdca7d53e949d385"
+  "gitHead": "d4805176d99938d170c9c035b32748c69ccf61a3"
 }
