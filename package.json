@@ -1,0 +1,18 @@
+{
+  "name": "@daneroo/ottawajs-lerna",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "standard": "^13.0.0"
+  },
+  "scripts": {
+    "clean": "lerna clean --yes && echo now you can: rm -rf $(find packages -name coverage)",
+    "unit": "lerna run unit --concurrency 1 --stream",
+    "test": "lerna run test"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}

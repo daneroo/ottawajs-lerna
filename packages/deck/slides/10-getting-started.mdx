@@ -1,0 +1,83 @@
+
+import { CodeSurfer } from "mdx-deck-code-surfer"
+
+
+```bash Getting Started
+$ npx lerna init
+.
+├── lerna.json
+├── package.json
+└── packages/
+----
+1:1 > Initialize repository
+2:5 > Creates these files
+```
+
+---
+
+```bash Adding a new package
+$ npx lerna create math 
+$ lerna add jest --dev --scope=@daneroo/ottawajs-lerna-math
+$ lerna add standard --dev packages/math
+----
+1:1 > Create a new package (answer prompts)
+2:2 > Add dependency by scope
+3:3 > .. or by path
+```
+
+---
+
+```bash Running tests
+$ lerna run test
+lerna notice cli v3.13.1
+lerna info Executing command in 2 packages: "npm run test"
+
+lerna info run Ran npm script 'test' in 'deck' in 2.1s:
+
+> @daneroo/ottawajs-lerna-deck@1.0.0 test
+> npm audit
+  === npm audit security report ===                        
+found 0 vulnerabilities
+ in 9137 scanned packages
+
+lerna info run Ran npm script 'test' in 'math' in 3.6s:
+
+> @daneroo/ottawajs-lerna-math@1.0.0 test 
+> npm run lint && npm run unit
+> @daneroo/ottawajs-lerna-math@1.0.0 lint
+> standard
+> @daneroo/ottawajs-lerna-math@1.0.0 unit
+> jest
+
+lerna success run Ran npm script 'test' in 2 packages in 3.6s:
+lerna success - @daneroo/ottawajs-lerna-deck
+lerna success - @daneroo/ottawajs-lerna-math
+----
+1:1 > Run all tests
+3:3 > run in each package
+5:11 > package deck
+13:20 > package math
+21:24 > result status
+```
+
+---
+
+```bash Running (verbose) tests
+$ lerna run unit --concurrency 1 --stream 
+ottawajs-lerna-math: > @daneroo/ottawajs-lerna-math@1.0.0 unit
+ottawajs-lerna-math: > jest
+ottawajs-lerna-math: PASS __tests__/math.test.js
+ottawajs-lerna-math:   @daneroo/ottawajs-lerna-math
+ottawajs-lerna-math:     add
+ottawajs-lerna-math:       ✓ Check (integers): 3 == add(1,2) (4ms)
+ottawajs-lerna-math:       ✓ Check (floats): 3.1416 == add(1.0406,2.101)
+ottawajs-lerna-math:       ✓ Check (string): 12 == add(1,2)
+ottawajs-lerna-math: Test Suites: 1 passed, 1 total
+ottawajs-lerna-math: Tests:       3 passed, 3 total
+ottawajs-lerna-math: Snapshots:   0 total
+ottawajs-lerna-math: Time:        1.481s
+ottawajs-lerna-math: Ran all test suites.
+----
+1:1 > Run all tests
+2:14 > ..output..
+```

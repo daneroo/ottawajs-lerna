@@ -1,0 +1,33 @@
+{
+  "name": "@daneroo/ottawajs-lerna-deck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slde deck for OttawaJS presentation on lerna",
+  "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
+  "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daneroo/ottawajs-lerna.git"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.js",
+    "//": "build with --no-html until bug is solved https://github.com/pomber/code-surfer/issues/8",
+    "build": "mdx-deck build deck.js --no-html -d public",
+    "postbuild": "cpy --parents \"static/**\" ./public",
+    "test": "npm audit"
+  },
+  "bugs": {
+    "url": "https://github.com/daneroo/ottawajs-lerna/issues"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "cpy-cli": "^2.0.0",
+    "mdx-deck": "^1.10.0",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
+  }
+}

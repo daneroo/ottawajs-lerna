@@ -1,0 +1,38 @@
+{
+  "name": "@daneroo/ottawajs-lerna-math",
+  "version": "1.0.0",
+  "description": "Math operations in a package",
+  "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
+  "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
+  "license": "ISC",
+  "main": "lib/math.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daneroo/ottawajs-lerna.git"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "lint": "standard",
+    "unit": "jest",
+    "coverage": "jest --collectCoverageFrom=lib/**.js --coverage ."
+  },
+  "bugs": {
+    "url": "https://github.com/daneroo/ottawajs-lerna/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "standard": "^13.0.0"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}

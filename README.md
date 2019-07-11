@@ -11,7 +11,7 @@ Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 - semantic-release kent.c.dodds
 - commitizen and lerna
 - ghooks ?
-- Dependency up[dates: https://renovatebot.com/
+- Dependency updates: https://renovatebot.com/
 
 ## Other Talks and Articles
 
