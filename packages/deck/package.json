@@ -1,6 +1,6 @@
 {
   "name": "@daneroo/ottawajs-lerna-deck",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "description": "Slde deck for OttawaJS presentation on lerna",
   "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
@@ -32,6 +32,6 @@
     "raw-loader": "^1.0.0"
   },
   "dependencies": {
-    "@daneroo/ottawajs-lerna-math": "^1.1.1"
+    "@daneroo/ottawajs-lerna-math": "^1.1.2"
   }
 }
