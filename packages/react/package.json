@@ -26,6 +26,24 @@
   "bugs": {
     "url": "https://github.com/daneroo/ottawajs-lerna/issues"
   },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "standard || true",
@@ -74,5 +92,5 @@
   "dependencies": {
     "@daneroo/ottawajs-lerna-math": "^1.1.4"
   },
-  "gitHead": "ff4671d1fcfdbec62b7d89393e646d625dc70e3a"
+  "gitHead": "b56b366f59f1db440a780c0a1d407b142d76965b"
 }
