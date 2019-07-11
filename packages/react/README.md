@@ -1,1 +1,1 @@
-# `react` library
+# `react` library component
