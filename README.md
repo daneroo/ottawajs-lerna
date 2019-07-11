@@ -33,3 +33,10 @@ Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 - [Zelda (auto-link)](https://github.com/feross/zelda)
 - [Pika Pack](https://github.com/pikapkg/pack)
 - [Bit](https://github.com/teambit/bit)
+
+
+## Fix
+
+```bash
+lerna exec npm install -- --package-lock-only
+```
