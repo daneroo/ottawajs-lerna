@@ -1,6 +1,6 @@
 {
   "name": "@daneroo/ottawajs-lerna-math",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Math operations in a package",
   "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
   "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
