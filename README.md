@@ -1,4 +1,4 @@
-## OttawaJS - Lerna
+# OttawaJS - Lerna
 
 Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 
@@ -20,6 +20,7 @@ Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 - https://www.slideshare.net/julienbisconti/monorepo-vs-many-repos
 - https://slides.com/eatrocks/monorepos-with-lerna
 - [Monorepos by example (1)](https://codeburst.io/monorepos-by-example-part-1-3a883b49047e)
+
 ## Demo Repo for Math
 
 - https://github.com/eatrocks/lerna-mathstuff
