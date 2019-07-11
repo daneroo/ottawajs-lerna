@@ -11,6 +11,7 @@
     "url": "git+https://github.com/daneroo/ottawajs-lerna.git"
   },
   "scripts": {
+    "dev": "npm start",
     "start": "mdx-deck deck.js",
     "//": "build with --no-html until bug is solved https://github.com/pomber/code-surfer/issues/8",
     "build": "mdx-deck build deck.js --no-html -d public",
@@ -29,5 +30,8 @@
     "mdx-deck": "^1.10.0",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^1.0.0"
+  },
+  "dependencies": {
+    "@daneroo/ottawajs-lerna-math": "^1.1.1"
   }
 }

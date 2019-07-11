@@ -23,9 +23,10 @@ describe('@daneroo/ottawajs-lerna-math', () => {
   })
   describe('sum (n-arity)', () => {
     test.each([
-      ['integers', 3, [1, 2]],
+      ['integers:2', 3, [1, 2]],
       ['integers:3', 6, [1, 2, 3]],
       ['integers:0', 0, [-2, -1, 0, 1, 2]],
+      ['single', 42, [42]],
       ['empty', 0, []],
       ['floats', 3.1416, [1.0406, 2.101]],
       ['string', '012', ['1', '2']]

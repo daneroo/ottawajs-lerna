@@ -21,6 +21,7 @@
     "url": "git+https://github.com/daneroo/ottawajs-lerna.git"
   },
   "scripts": {
+    "dev": "jest --watch",
     "test": "npm run lint && npm run unit",
     "lint": "standard",
     "unit": "jest",

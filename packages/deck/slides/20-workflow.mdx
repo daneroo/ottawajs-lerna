@@ -1,15 +1,45 @@
 
 import { CodeSurfer } from "mdx-deck-code-surfer"
+import  { Counter } from './components/Counter'
+import  { Adder } from './components/Adder'
 
-```bash Workflow
+```bash Publish Workflow
+# .. add feature ..
 $ lerna run test
 $ lerna updated
 $ lerna publish
 $ npm info @daneroo/ottawajs-lerna-math
 ----
-1:1 > Always!
-2:2 > What will be published
-3:3 > Do it!
-4:4 > Check
+1:2 > Always!
+3:3 > What will be published
+4:4 > Do it!
+5:5 > Check
 ```
 
+---
+
+```bash Dev Workflow
+$ lerna run --parallel dev # npm run dev
+----
+1:1 > Run All the things
+```
+
+---
+
+```jsx Demo (mdx)
+import  { Counter } from './components/Counter'
+
+<Counter />
+```
+
+---
+
+## Counter
+
+<Counter />
+
+---
+
+## Adder (lib-math)
+
+<Adder numbers={[1,2,3]}/>
