@@ -4,7 +4,7 @@
   "description": "Math operations in a package",
   "author": "Daniel Lauzon <daniel.lauzon@gmail.com>",
   "homepage": "https://github.com/daneroo/ottawajs-lerna#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/math.js",
   "directories": {
     "lib": "lib",
@@ -34,5 +34,6 @@
     "env": {
       "jest": true
     }
-  }
+  },
+  "gitHead": "e68fa63274ba9dc45862911cfdca7d53e949d385"
 }

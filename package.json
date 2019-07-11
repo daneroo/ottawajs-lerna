@@ -1,6 +1,8 @@
 {
   "name": "@daneroo/ottawajs-lerna",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "lerna": "^3.13.1",
     "standard": "^13.0.0"
