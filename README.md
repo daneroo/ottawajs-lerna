@@ -7,7 +7,7 @@ Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 - monorepo
 - refactoring
 - examples (babel,jest)
-- Idea: im-penrose?, im-siral-galaxy?
+- Example React/pika(sum of divisors)
 - semantic-release kent.c.dodds
 - commitizen and lerna
 - ghooks ?

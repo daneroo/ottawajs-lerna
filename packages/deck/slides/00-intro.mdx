@@ -40,14 +40,63 @@ import { faTwitter, faGithub, faGitlab  } from '@fortawesome/free-brands-svg-ico
 
 ## Outline
 
-- monorepo
-- refactoring
-- examples (babel,jest)
-- Idea: im-penrose?, im-siral-galaxy?
-- semantic-release kent.c.dodds
-- commitizen and lerna
-- ghooks ?
-- Dependency updates: https://renovatebot.com/
+- What is a monorepo
+- What is it good for
+  - examples (babel,jest)
+  - refactoring
+- Getting started
+- Lifecycle
+- Example / demo
+- Other tools
+  - semantic-release kent.c.dodds
+  - commitizen and lerna
+  - Dependency updates: https://renovatebot.com/
+- CI/CD
 
 ---
 
+## What is a monorepo
+
+A _monorepo_ is a software development strategy where code for many projects are stored in the same repository
+
+- Libraries / packages
+- Multiple artifacts
+  - Business Logic
+  - React components
+  - Web Service
+
+---
+
+## Monorepo &ne; Monolith
+
+- A monorepo is about scope, not deployment
+- A monorepo can still have it's multiple components and _deliverables_
+
+---
+
+## Advantages
+
+- Better defined boundaries
+- Simplified _onboarding_
+- Simpler dependency management
+- Version management
+
+---
+
+## Drawbacks
+
+- Larger repository ..
+- More branches/tags
+- CI/CD can be more complex
+
+---
+
+```bash Simplified Onboarding
+git clone git@github.com:daneroo/ottawajs-lerna.git
+npx lerna bootstrap
+npx lerna run test
+----
+* > Everything on  one place
+```
+
+---

@@ -17,12 +17,34 @@ $ npx lerna init
 
 ```bash Adding a new package
 $ npx lerna create math 
+├── lerna.json
+├── package-lock.json
+├── package.json
+└── packages
+    └── math
+        ├── lib
+        │   └── math.js
+        └── package.json
 $ lerna add jest --dev --scope=@daneroo/ottawajs-lerna-math
 $ lerna add standard --dev packages/math
+
 ----
 1:1 > Create a new package (answer prompts)
-2:2 > Add dependency by scope
-3:3 > .. or by path
+2:9 > Every package has its own package.json
+10:10 > Add dependency by scope
+11:11 > .. or by path
+```
+
+---
+
+```bash Preparing (npm install ++)
+$ lerna boostrap
+```
+
+---
+
+```bash Running Commands
+$ lerna run coverage
 ```
 
 ---
