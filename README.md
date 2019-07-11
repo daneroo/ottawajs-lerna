@@ -2,6 +2,8 @@
 
 Slides and demo for OttawaJS talk on lerna.js - 2019-07-11
 
+Deployed to : <https://ottawajs-lerna.n.imetrical.com/>
+
 ## Outline
 
 - monorepo

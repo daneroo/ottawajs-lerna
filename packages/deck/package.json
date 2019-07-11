@@ -16,6 +16,8 @@
     "//": "build with --no-html until bug is solved https://github.com/pomber/code-surfer/issues/8",
     "build": "mdx-deck build deck.js --no-html -d public",
     "postbuild": "cpy --parents \"static/**\" ./public",
+    "deploy": "npm run build && npm run deploy:now",
+    "deploy:now": "cp now.json public/ && cd public && now --public --target production && now rm --safe --yes ottawajs-lerna",
     "test": "npm audit"
   },
   "bugs": {

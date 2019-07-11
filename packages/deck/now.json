@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "ottawajs-lerna",
+  "alias": "ottawajs-lerna.n.imetrical.com",
+  "routes": [
+    { "src": "/index.html" },
+    { "src": "/main.js" },
+    { "src": "/static/images/(.*)" },
+    { "src": "/(.*)", "dest": "/" }
+  ]
+}
