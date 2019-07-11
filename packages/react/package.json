@@ -46,7 +46,7 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "lint": "standard || true",
+    "lint": "echo standard not working...",
     "test": "jest --verbose --coverage --silent",
     "test:watch": "jest --watch --runInBand --silent",
     "prebuild": "npm run lint && npm t && rimraf dist",
@@ -92,5 +92,5 @@
   "dependencies": {
     "@daneroo/ottawajs-lerna-math": "^1.1.7"
   },
-  "gitHead": "b56b366f59f1db440a780c0a1d407b142d76965b"
+  "gitHead": "b265d2e585185836d1b5cddfd1ae28bdd8991434"
 }
