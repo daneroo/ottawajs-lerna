@@ -16,8 +16,10 @@
     "//": "build with --no-html until bug is solved https://github.com/pomber/code-surfer/issues/8",
     "build": "mdx-deck build deck.js --no-html -d public",
     "postbuild": "cpy --parents \"static/**\" ./public",
-    "deploy": "npm run build && npm run deploy:now",
-    "deploy:now": "cp now.json public/ && cd public && now --public --target production && now rm --safe --yes ottawajs-lerna",
+    "deploy:vercel": "npm run static && cd public && vercel --prod && npm run clean:vercel",
+    "clean:vercel": "vercel rm --safe --yes ottawajs-lerna",
+    "preview:vercel": "npm run static && cd public && vercel",
+    "static": "npm run build && cp -r .vercel public/",
     "test": "npm audit"
   },
   "bugs": {
